@@ -2,7 +2,7 @@ const request = require('supertest');
 const { validate } = require('uuid');
 var mocha = require('mocha');
 var describe = mocha.describe;
-const app = require('../server');
+const app = require('..');
 
 describe('todos', () => {
   it("should be able to list all user's todo", async () => {
